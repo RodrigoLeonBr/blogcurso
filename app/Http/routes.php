@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'blog@index' );
+Route::get('index', 'blog@index' );
+Route::get('about', 'about@index' );
+Route::get('post', 'post@index' );
+Route::get('contact', 'contact@index' );
